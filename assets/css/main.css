@@ -1,8 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-body {
+body, html {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", arial, sans-serif;
+  overflow-x: hidden;
+}
+body ::-webkit-scrollbar, html ::-webkit-scrollbar {
+  width: 15px;
+}
+body ::-webkit-scrollbar-track, html ::-webkit-scrollbar-track {
+  background: #6700EE;
+}
+body ::-webkit-scrollbar-thumb, html ::-webkit-scrollbar-thumb {
+  background: #FF64CB;
+}
+body ::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
+  background: #ffaae3;
+  cursor: pointer;
 }
 
 ul {
@@ -133,7 +147,7 @@ section {
 }
 
 .skills-container ul li {
-  background: white;
+  background: #F7F7F7;
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
@@ -160,4 +174,61 @@ section {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured, .portfolio {
+    text-align: left;
+  }
+  .featured, .portfolio-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .left, .portfolio-left {
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+  .portfolio {
+    padding-top: 7em;
+  }
+  .portfolio-container img {
+    margin: 2em;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #6700EE;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0em;
+  }
+  .social-header {
+    display: block;
+    height: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */

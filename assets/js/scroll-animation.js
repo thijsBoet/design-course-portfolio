@@ -43,7 +43,7 @@ gsap.from('.transition2', {
 
 gsap.from('.transition3', {
   scrollTrigger: {
-    trigger: '.transition3',
+    trigger: '.transition',
     start: 'top bottom',
   },
   y: 50,

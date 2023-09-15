@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matt Boot Portfolio | Beautifully Created Web Experiences</title>
   <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="./assets/js/scroll-animation.js" defer></script>
 </head>
 
 <body>
@@ -22,30 +25,32 @@
     </header>
     <div class="social-header">
       <ul>
-        <li><a href="#"><img src="./assets/images/icons/social-media-links.svg" alt="social media links"></a></li>
+        <li><a href="#"><img src="./assets/images/icons/facebook-logo.svg" alt="facebook link"></a></li>
+        <li><a href="#"><img src="./assets/images/icons/instagram-logo.svg" alt="instagram links"></a></li>
+        <li><a href="#"><img src="./assets/images/icons/x-logo.svg" alt="x/twitter link"></a></li>
       </ul>
     </div>
   </div>
   <div class="hero">
     <div class="content">
-      <h1 class="stagger">Beautifully Created Web Experiences</h1>
-      <div class="meet">
+      <h1 class="stagger1">Beautifully Created Web Experiences</h1>
+      <div class="meet stagger1">
         <span><img class="hand-emoji" src="./assets/images/icons/downward-pointing-hand.svg" alt="Downward pointing hand emoji"></span>
         <p>Meet Matt Boot</p>
       </div>
-      <svg class="scroll" width="42" height="76" viewBox="0 0 42 76" fill="none">
-        <rect x="4" y="4" width="34" height="68" rx="17" stroke="white" stroke-width="8" />
-        <circle cx="21" cy="21" r="9" fill="white" />
+      <svg class="scroll stagger1" width="42" height="76" viewBox="0 0 42 76" fill="none">
+        <rect x="4" y="4" width="34" height="68" rx="17" stroke="white" stroke-width="4" />
+        <circle class="circle" cx="21" cy="21" r="9" fill="white" />
       </svg>
     </div>
     <svg class="hero-design" width="480" height="480" viewBox="0 0 480 480" fill="none">
-      <rect x="240" width="120" height="120" rx="19" fill="#6E00FF" />
-      <rect x="120" y="120" width="120" height="120" rx="19" fill="white" />
-      <rect x="360" y="120" width="120" height="120" rx="19" fill="white" />
-      <rect x="120" y="360" width="120" height="120" rx="19" fill="white" />
-      <rect y="240" width="120" height="120" rx="19" fill="white" fill-opacity="0.25" />
-      <rect x="240" y="240" width="120" height="120" rx="19" fill="#6E00FF" />
-      <rect x="360" y="120" width="120" height="120" rx="19" fill="white" fill-opacity="0.52" />
+      <rect class="square-anim" x="240" width="120" height="120" rx="19" fill="#6E00FF" />
+      <rect class="square-anim" x="120" y="120" width="120" height="120" rx="19" fill="white" />
+      <rect class="square-anim" x="360" y="120" width="120" height="120" rx="19" fill="white" />
+      <rect class="square-anim" x="120" y="360" width="120" height="120" rx="19" fill="white" />
+      <rect class="square-anim" y="240" width="120" height="120" rx="19" fill="white" fill-opacity="0.25" />
+      <rect class="square-anim" x="240" y="240" width="120" height="120" rx="19" fill="#6E00FF" />
+      <rect class="square-anim" x="360" y="120" width="120" height="120" rx="19" fill="white" fill-opacity="0.52" />
       <circle cx="300" cy="180" r="60" fill="#FF64CB" />
       <circle cx="180" cy="300" r="60" fill="#BCFBFF" />
     </svg>
@@ -116,7 +121,7 @@
       <a href="#"><img src="assets\images\pictures\fretastic-com-hero-img.jpg" alt="Fretastic"></a>
     </div>
     <div class="portfolio-container transition3">
-      <div class="portfolio-left">
+      <div class="portfolio-left transition3">
         <div class="inner">
           <p class="subtitle">PROGRAMMING UTILITY</p>
           <p class="featured-title">Regex101.com</p>
@@ -129,7 +134,7 @@
           </p>
         </div>
       </div>
-      <a href="#"><img src="assets\images\pictures\regex101-com-hero-image.jpg" alt="Regex101"></a>
+      <a href="#"><img src="assets\images\pictures\regex101-com-hero-image.jpg" alt="Regex101" class="transition3"></a>
     </div>
   </section>
 </body>
